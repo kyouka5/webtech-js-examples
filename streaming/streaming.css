@@ -1,0 +1,66 @@
+/* color palette: https://colorpalettes.net/color-palette-4542/ */
+
+html {
+    background-color: #16354D;
+    font-family: 'Trebuchet MS';
+}
+
+body {
+    background-color: #E4E5EA;
+    text-align: center;
+    width: 25%;
+    margin: 1em auto;
+    border-radius: 0.25em;
+    padding: 2em;
+}
+
+h1 {
+    color: #16354D;
+    font-variant: small-caps;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-style: italic;
+    font-size: large;
+    font-weight: normal;
+    margin-top: 0;
+    color: #6B99C3;
+}
+
+#searchTerm {
+    width: 75%;
+    height: 2em;
+    border: thin solid #16354D;
+    color: #16354D;
+}
+
+#searchButton {
+    color: #16354D;
+    background-color: #6B99C3;
+    border: thin solid #16354D;
+    height: 2.5em;
+    padding: 0.5em;
+}
+
+ul {
+    padding: 0.25em;
+}
+
+li {
+    text-align: left;
+    display: block;
+    padding: 0.5em;
+    background-color: #D2D2D4;
+    border-radius: 0.5em;
+    margin: 0.25em;
+}
+
+a {
+    text-decoration: none;
+    color: #16354D;
+}
+
+a:hover {
+    color: #6B99C3;
+}
