@@ -1,0 +1,37 @@
+body {
+    background-color: ghostwhite;
+}
+
+div.note,
+div.warning {
+    padding: 1em 1em 1em 2em;
+    margin: 1em 3em 1em 3em;
+}
+
+div.note {
+    background-color: #CCFFCC;
+}
+
+div.warning {
+    background-color: mistyrose;
+}
+
+div.note::before,
+div.warning::before {
+    position: absolute;
+    padding: 0.25em;
+    border-radius: 0.25em;
+    color: white;
+}
+
+div.note::before {
+    content: "Note";
+    background-color: green;
+    transform: rotate(-10deg) translate(-3em, -1.5em);
+}
+
+div.warning::before {
+    content: "Warning!";
+    background-color: red;
+    transform: rotate(-10deg) translate(-5em, -1.5em);
+}
