@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>Lorem ipsum</title>
     <link rel="stylesheet" href="note.css">
-    <script src="note.js"></script>
+    <script src="note.js" async></script>
 </head>
 
 <body>
@@ -28,12 +28,12 @@
         id elit.
     </div>
     <div>
-        <input type="color" value="#CCFFCC" onchange="applyBackgroundColorChange('note', this.value)" autocomplete="off" />
+        <input id="note-picker" type="color" value="#CCFFCC" autocomplete="off" />
         <span>Set background color for Note. </span>
         <span>In total, Note's background color has been changed <span id="note-counter">0</span> times.</span>
     </div>
     <div>
-        <input type="color" value="#FFE4E1" onchange="applyBackgroundColorChange('warning', this.value)" autocomplete="off" />
+        <input id="warning-picker" type="color" value="#FFE4E1" autocomplete="off" />
         <span>Set background color for Warning. </span>
         <span>In total, Warning's background color has been changed <span id="warning-counter">0</span> times.</span>
     </div>

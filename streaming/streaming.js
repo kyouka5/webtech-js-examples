@@ -1,23 +1,21 @@
 const API_KEY = "ADD_YOUR_API_KEY_HERE";
 
 async function search() {
-    const inputElement = document.getElementById("searchTerm");
-    return await findByName(inputElement.value);
+    const searchField = document.getElementById("searchTerm");
+    return await findByName(searchField.value);
 }
 
 async function findByName(name) {
     const response = await fetch(`https://api.watchmode.com/v1/search/?apiKey=${API_KEY}&search_field=name&search_value=${name}`);
     const responseBody = await response.json();
     const titles = responseBody.title_results;
-    if (titles) {
-      fillSearchResultsList(titles);
-    }
+    return fillSearchResultsList(titles);
 }
 
 function fillSearchResultsList(titles) {
-    const searchResultsElement = document.getElementById("searchResults");
-    searchResultsElement.replaceChildren();
-    appendTitleNames(titles, searchResultsElement);
+    const searchResults = document.getElementById("searchResults");
+    searchResults.replaceChildren();
+    appendTitleNames(titles, searchResults);
 }
 
 function appendTitleNames(titles, element) {
@@ -37,3 +35,5 @@ function appendLinkToListItem(title, listItem) {
     listItem.append(link);
 }
 
+const searchButton = document.getElementById("searchButton");
+searchButton.addEventListener("click", search);
