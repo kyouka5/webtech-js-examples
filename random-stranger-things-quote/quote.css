@@ -1,0 +1,52 @@
+/* color palette: https://colorpalettes.net/color-palette-1201/ */
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin: 1em auto;
+}
+
+blockquote::before {
+    content: "\201E";
+}
+
+blockquote::after {
+    content: "\201D";
+}
+
+#quote {
+    background-color: #dde4ea;
+    border-radius: 0.25em;
+    padding: 1em;
+    margin: 1em;
+    color: #291a2d;
+}
+
+blockquote::before, blockquote::after {
+    font-size: 2em;
+    color: #908c8a;
+}
+
+blockquote {
+    text-align: justify;
+}
+
+blockquote, figcaption {
+    font-size: x-large;
+}
+
+figcaption {
+    text-align: right;
+    color: #5a4755;
+}
+
+figcaption::before {
+    content: "\2014";
+}
+
+button {
+    margin: 1em;
+    padding: 0.5em;
+}
